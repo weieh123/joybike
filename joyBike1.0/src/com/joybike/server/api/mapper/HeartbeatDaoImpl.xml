@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.joybike.server.api.dao.HeartbeatDao">
+	<!-- 根据车辆ID查  -->
+	<select id="selByVehId" resultType="com.joybike.server.api.model.vehicleHeartbeat">
+		select hea.* from vehicleheartbeat hea left join vehicle veh on veh.lockId=hea.lockId 
+		where veh.vehicleId=#{ vehicleId} and hea.createAt BETWEEN #{ beginAt} AND #{ endAt}
+	</select>
+</mapper>

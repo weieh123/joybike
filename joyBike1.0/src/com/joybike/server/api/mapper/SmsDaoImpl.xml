@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.joybike.server.api.dao.SmsDao">
+	<!-- 添加 -->
+	<insert id="insert" parameterType="com.joybike.server.api.model.Sms">
+		insert into sms values(#{id},#{title},#{content},#{createAt},#{creator},#{imagUrl},#{detailURL},#{target})
+	</insert>
+	<!-- 修改 -->
+	<update id="update" parameterType="com.joybike.server.api.model.Sms">
+		update sms set id=#{id},title=#{title},content=#{content},creator=#{creator},createAt=#{createAt},imagUrl=#{imagUrl},detailURL=#{detailURL},target=#{target} where id=#{id}
+	</update>
+	<!-- 删除 -->
+	<delete id="delById" parameterType="java.lang.Long">
+		delete from sms where id=#{id}
+	</delete>
+	<!-- 查所有  -->
+	<select id="selectAll" resultType="com.joybike.server.api.model.Sms">
+		select id,title,content,creator,createAt,imagUrl,detailURL,target from sms
+	</select>
+	<!-- 查一个  -->
+	<select id="selectOne" resultType="com.joybike.server.api.model.Sms">
+		select id,title,content,creator,createAt,imagUrl,detailURL,target from sms where id=#{id}
+	</select>
+</mapper>
