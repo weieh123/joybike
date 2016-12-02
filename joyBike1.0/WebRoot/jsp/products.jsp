@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="../css/pintuer.css">
 <link rel="stylesheet" href="../css/admin.css">
 <script src="../js/jquery.js"></script>
+<script src="../js/myjquery.js"></script>
 <script src="../js/pintuer.js"></script>
 </head>
 <body>

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/admin.css">
     <script src="../js/jquery.js"></script>
     <script src="../js/pintuer.js"></script> 
+    <script src="../js/myjquery.js"></script> 
 </head>
 <body>
 <form method="post" action="">

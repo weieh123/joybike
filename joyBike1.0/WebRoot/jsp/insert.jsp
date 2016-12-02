@@ -41,7 +41,7 @@
           <label>绑定电话：</label>
         </div>
         <div class="field">
-          <input type="text" class="input w50" name="bundlingPhone"  data-validate="mobile:请输入正确的电话号码"/>
+          <input type="text" class="input w50" name="bundlingPhone"/>
           <div class="tips"></div>
         </div>
       </div>

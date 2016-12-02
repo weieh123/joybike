@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/admin.css">
     <script src="../js/jquery.js"></script>
     <script src="../js/pintuer.js"></script>  
+    <script src="../js/myjquery.js"></script>  
 </head>
 <body>
 <form id="form" method="post" action="/joyBike1.0/vehicle/batchUpdate">
@@ -20,7 +21,7 @@
     <div class="panel-head"><strong class="icon-pencil-square-o"> 批量修改</strong></div>
     <table class="table table-hover text-center">
       <tr>
-        <th width="120">车辆ID</th>
+        <th width="200">车辆ID</th>
         <th>隶属代理商ID</th>
         <th>启用状态</th>
       </tr>      
