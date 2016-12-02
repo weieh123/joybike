@@ -37,7 +37,7 @@ ul,li{ list-style-type:none;}
 .content{width:100%;}
 .body-content{padding:20px 0; overflow:hidden;}
 .content .title{ border-bottom:1px solid #dfdfdf; line-height:35px; font-size:14px; font-weight:bold; color:#09c}
-.form-x .form-group .label{ width:10%;}
+.form-x .form-group .label{ width:15%;}
 .form-x .form-button { margin-left:10%;}
 .w50 { width:25%; float:left;}
 .form-x .tipss{ float:left; padding-left:10px; color:#888; line-height:42px;}
