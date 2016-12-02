@@ -15,10 +15,7 @@ $(function(){
 		var container = $(".panel");
 		var tb1 = $(".panel").children("div").clone(true);
 		var tb2 = $(".panel").children("table").clone(true);
-		var len = tb2.find("tr").length;
-		for(var i=len;i>1;i--){ 
-			tb2.find("tr").eq(1).remove();  
-		}
+		tb2.find("tr").eq(0).nextAll().remove();
 		var bak = $("<div id='hea'></div>"); 
 		container.append(bak);    
 		bak.append(tb1);		

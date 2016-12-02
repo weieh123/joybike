@@ -29,7 +29,7 @@
 	    </div>
 	    <table class="table table-hover text-center">
 	      <tr>
-	        <th width="120">车辆ID</th>
+	        <th width="120px">车辆ID</th>
 	        <th>车锁ID</th>       
 	        <th>绑定电话</th>
 	        <th>隶属代理商ID</th>
@@ -40,7 +40,7 @@
 	        <th>创建时间</th>
 			<th>修改时间</th>
 			<th>备注</th>
-			<th>操作</th>
+			<th width="170px">操作</th>
 	      </tr>
 	        <c:forEach items="${vehicles }" var="vehicle" >
 			<tr>	
